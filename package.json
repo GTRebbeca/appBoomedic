@@ -7,7 +7,15 @@
   "displayName": "helloworld",
   "dependencies": {
     "cordova-browser": "^5.0.4",
+    "cordova-ios": "^5.0.1",
     "cordova-plugin-browsersync": "^1.1.0",
-    "cordova-plugin-customurlscheme": "git+https://github.com/EddyVerbruggen/Custom-URL-scheme.git"
+    "cordova-plugin-camera": "git+https://github.com/apache/cordova-plugin-camera.git",
+    "cordova-plugin-customurlscheme": "git+https://github.com/EddyVerbruggen/Custom-URL-scheme.git",
+    "cordova-plugin-media-capture": "^1.2.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-camera": {}
+    }
   }
 }

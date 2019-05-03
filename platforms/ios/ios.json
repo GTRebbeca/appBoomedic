@@ -11,6 +11,14 @@
             {
               "xml": "<feature name=\"Battery\"><param name=\"ios-package\" value=\"CDVBattery\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"Camera\"><param name=\"ios-package\" value=\"CDVCamera\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<preference name=\"CameraUsesGeolocation\" value=\"false\" />",
+              "count": 1
             }
           ]
         }
@@ -23,6 +31,9 @@
     },
     "cordova-plugin-browsersync": {
       "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "$(PRODUCT_BUNDLE_IDENTIFIER)"
     }
   },
   "dependent_plugins": {},
@@ -34,10 +45,43 @@
       "clobbers": [
         "navigator.battery"
       ]
+    },
+    {
+      "id": "cordova-plugin-camera.Camera",
+      "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "Camera"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.CameraPopoverOptions",
+      "file": "plugins/cordova-plugin-camera/www/CameraPopoverOptions.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "CameraPopoverOptions"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.camera",
+      "file": "plugins/cordova-plugin-camera/www/Camera.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "navigator.camera"
+      ]
+    },
+    {
+      "id": "cordova-plugin-camera.CameraPopoverHandle",
+      "file": "plugins/cordova-plugin-camera/www/ios/CameraPopoverHandle.js",
+      "pluginId": "cordova-plugin-camera",
+      "clobbers": [
+        "CameraPopoverHandle"
+      ]
     }
   ],
   "plugin_metadata": {
     "cordova-plugin-battery-status": "1.1.2",
-    "cordova-plugin-browsersync": "0.1.7"
+    "cordova-plugin-browsersync": "0.1.7",
+    "cordova-plugin-camera": "4.1.0-dev"
   }
 }

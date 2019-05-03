@@ -82,4 +82,8 @@
     <feature name="Battery">
         <param name="ios-package" value="CDVBattery" />
     </feature>
+    <feature name="Camera">
+        <param name="ios-package" value="CDVCamera" />
+    </feature>
+    <preference name="CameraUsesGeolocation" value="false" />
 </widget>

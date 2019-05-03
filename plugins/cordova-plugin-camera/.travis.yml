@@ -1,0 +1,71 @@
+sudo: false
+
+addons:
+  jwt:
+    secure: QivPLlqTVvOo3TJeHxuBOfxU6lho1I0IxQ3b68yntkEQQJko6kzleXHfgjf0a8aw8m38E3+fxaBWF1bGyucGwOLDWY8Ddt2P2xg44zdXH5EXHd9oIqAgngIdzLvUtH3Db2TbQEtIGOkrnNR2STovjqB7vHGLASQrgs4oL7r32/s=
+
+env:
+  global:
+  - SAUCE_USERNAME=snay
+  - TRAVIS_NODE_VERSION=6
+
+language: node_js
+node_js: 6
+
+matrix:
+  include:
+  - env: TEST_DIR=.
+    language: objective-c
+
+  - env: TEST_DIR=./tests/ios
+    language: objective-c
+
+  - env: PLATFORM=browser-chrome
+  - env: PLATFORM=browser-firefox
+  - env: PLATFORM=browser-safari
+  - env: PLATFORM=browser-edge
+
+  - env: PLATFORM=ios-10.0
+    os: osx
+    osx_image: xcode9
+
+  - env: PLATFORM=android-7.0
+    os: linux
+    language: android
+    jdk: oraclejdk8
+    android:
+      components:
+        - tools
+        - build-tools-28.0.3
+        - android-28
+        - extra-android-m2repository
+      licenses:
+        - 'android-sdk-preview-license-.+'
+        - 'android-sdk-license-.+'
+        - 'google-gdk-license-.+'
+
+before_install:
+  # `language: android` has no Node.js installed, therefore we need to install it manually
+  - if [[ "$PLATFORM" =~ android ]]; then
+      nvm install $TRAVIS_NODE_VERSION;
+      gradle --version;
+    fi
+
+  - if [[ "$PLATFORM" =~ ios ]]; then
+      npm install -g ios-deploy;
+    fi
+
+  - npm install -g github:apache/cordova-paramedic
+  - npm install -g cordova
+
+install:
+  - npm install
+
+script:
+  - if [[ "$TEST_DIR" != "" ]]; then
+      cd $TEST_DIR;
+      npm install;
+      npm test;
+    else
+      cordova-paramedic --config pr/$PLATFORM --plugin . --shouldUseSauce --buildName travis-plugin-camera-$TRAVIS_JOB_NUMBER;
+    fi

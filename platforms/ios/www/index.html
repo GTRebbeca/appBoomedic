@@ -108,10 +108,12 @@
                 }, false);
                     ref.addEventListener("backbutton", function(e){
                            if($.mobile.activePage.is('#homepage')){
+                             alert('adiosito');
                                e.preventDefault();
                                navigator.app.exitApp();
                            }
                            else {
+                             alert('adiosito');
                                navigator.app.backHistory();
                            }
                         }, false);
@@ -138,15 +140,20 @@
                 document.getElementById("deviceready").style.display = "none";
             }, false);
 
-            ref.addEventListener('exit', function(){
+            ref.addEventListener('exit', function(event){
+                alert('Adiós');
                 navigator.app.exitApp();
             }, false);
-                ref.addEventListener("backbutton", function(e){
+                ref.addEventListener('backbutton', function(event){
+                   alert('me regreso yeih');
                        if($.mobile.activePage.is('#homepage')){
                            e.preventDefault();
+                          alert('good bye');
                            navigator.app.exitApp();
+
                        }
                        else {
+                            alert('me regreso yeih');
                            navigator.app.backHistory();
                        }
                     }, false);

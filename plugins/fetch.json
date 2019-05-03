@@ -28,7 +28,7 @@
   "cordova-plugin-camera": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-camera@~2.1.1"
+      "id": "https://github.com/apache/cordova-plugin-camera.git"
     },
     "is_top_level": true,
     "variables": {}
