@@ -123,5 +123,5 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <plugin name="cordova-plugin-inappbrowser" spec="~2.0.2" />
+    <plugin spec="https://github.com/jverlee/cordova-plugin-inappbrowser-camera.git" version="1.1.0" source="git" />
 </widget>

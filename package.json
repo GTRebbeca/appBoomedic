@@ -6,6 +6,7 @@
   },
   "displayName": "helloworld",
   "dependencies": {
+    "cordova-android": "^8.0.0",
     "cordova-browser": "^5.0.4",
     "cordova-ios": "^5.0.1",
     "cordova-plugin-browsersync": "^1.1.0",

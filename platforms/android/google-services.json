@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "53264507263",
+    "firebase_url": "https://boomedic-d087f.firebaseio.com",
+    "project_id": "boomedic-d087f",
+    "storage_bucket": "boomedic-d087f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:53264507263:android:4185cf1b705ab0dd",
+        "android_client_info": {
+          "package_name": "com.test.Boomedic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "53264507263-ie6kngkcuvmp0rgu69jpfg34g2hf3gca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlyy2pCdthG6BIUjdN2v3RxUxiXgAuKD4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

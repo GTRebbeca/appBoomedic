@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.test.Boomedic" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Boomedic</name>
+    <description>
+       Boomedic for medical appointments
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <icon density="ldpi" src="www/img/medical.png" />
+    <icon density="mdpi" src="www/img/medical.png" />
+    <icon density="hdpi" src="www/img/medical.png" />
+    <icon density="xhdpi" src="www/img/medical.png" />
+    <icon density="xxhdpi" src="www/img/medical.png" />
+    <icon density="xxxhdpi" src="www/img/medical.png" />
+    <splash density="land-ldpi" src="www/img/medical.png" />
+    <splash density="land-mdpi" src="www/img/medical.png" />
+    <splash density="land-hdpi" src="www/img/medical.png" />
+    <splash density="land-xhdpi" src="www/img/medical.png" />
+    <splash density="land-xxhdpi" src="www/img/medical.png" />
+    <splash density="land-xxxhdpi" src="www/img/medical.png" />
+    <splash density="port-ldpi" src="www/img/medical.png" />
+    <splash density="port-mdpi" src="www/img/medical.png" />
+    <splash density="port-hdpi" src="www/img/medical.png" />
+    <splash density="port-xhdpi" src="www/img/medical.png" />
+    <splash density="port-xxhdpi" src="www/img/medical.png" />
+    <splash density="port-xxxhdpi" src="www/img/medical.png" />
+    <resource-file src="google-services.json" target="google-services.json" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <feature name="Battery">
+        <param name="android-package" value="org.apache.cordova.batterystatus.BatteryListener" />
+    </feature>
+</widget>

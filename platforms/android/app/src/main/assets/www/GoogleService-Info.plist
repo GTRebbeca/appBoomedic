@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>53264507263-783b6r8831asvgmot93ghokpudtlg02a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.53264507263-783b6r8831asvgmot93ghokpudtlg02a</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBC5Lw_HcIdek8h94NJWOoJirJQm3o3HWU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>53264507263</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.test.Boomedic</string>
+	<key>PROJECT_ID</key>
+	<string>boomedic-d087f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>boomedic-d087f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:53264507263:ios:4185cf1b705ab0dd</string>
+	<key>DATABASE_URL</key>
+	<string>https://boomedic-d087f.firebaseio.com</string>
+</dict>
+</plist>
